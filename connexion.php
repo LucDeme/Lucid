@@ -20,7 +20,6 @@
             <section class="main">
                 <div class="main-top">
                     <h1><?= $var ?></h1>
-                    <i class="fas fa-user-cog"></i>
                 </div> 
             </section>
         </div>

@@ -1,4 +1,9 @@
-<link rel="icon" href="./img/lucidw.svg" />
-<link rel="stylesheet" href="css/styles.css" />
-<!-- Font Awesome Cdn Link -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+<head>
+
+    <!-- bootstrap 5 css -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="_css/style.css">
+</head>
+
+
