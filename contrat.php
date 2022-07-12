@@ -15,38 +15,36 @@
     <?php require_once('_menu/menu.php'); ?>
     <body>
         <div class="main">
-            <h1>Bootstrap 5 Sidebar Navigation</h1>
+            <h1 class="boxes">Un nouveau contrat ? Youuhouu</h1>
 
             <div class="grid">
-                <h2>Grid</h2>
-                <div class="grid-container">
-                    <form method="post">
-                        <label> Client </label>
-                        <input type="text" name="client" value="" placeholder="Saisie nom client"/>
+                <form method="post" class="form-reseaux boxes">
+                    <h2 class="titreh">Saisir un nouveau contrat<hr></h2>
+                    <div class="formgrid">
+                        <label> Service </label>
+                        <select type="text" name="service" value="" placeholder="Saisie nom client">
+                            <option value="" disabled selected hidden>Selectionner un service</option>
+                            <option value="abo">Abonnement reseaux</option>
+                            <option value="campagne">Campagne</option>
+                            <option value="crea">Creation graphique & Print</option>
+                            <option value="shoot">Photo & Vidéo</option>
+                            <option value="Formation">Formation</option>
+                            <option value="Site">Site Web</option>
+                            <option value="Autre">Autre</option>
+                        </select>
                         <label> Type Paiement </label>
-                        <input type="text" name="paiement" value="" placeholder="selectionner type de paiement"/>
+                        <input type="text" name="client" value="" placeholder="Saisie nom client"/>
                         <label> Durée </label>
+                        <input type="text" name="paiement" value="" placeholder="selectionner type de paiement"/>
+                        <label> Durée de l'Abonnement </label>
                         <input type="text" name="duree" value="" placeholder="Definir durée (en mois)"/>
-                        <label> Client </label>
-                        <input type="text" name="client" value="" placeholder="Saisie nom client"/>
-                        <label> Client </label>
-                        <input type="text" name="client" value="" placeholder="Saisie nom client"/>
-                        <label> Client </label>
-                        <input type="text" name="client" value="" placeholder="Saisie nom client"/>
-                        <label> Client </label>
-                        <input type="text" name="client" value="" placeholder="Saisie nom client"/>
-                        <label> Client </label>
-                        <input type="text" name="client" value="" placeholder="Saisie nom client"/>
-                        <label> Client </label>
-                        <input type="text" name="client" value="" placeholder="Saisie nom client"/>
-                        <label> Client </label>
-                        <input type="text" name="client" value="" placeholder="Saisie nom client"/>
-                        <label> Client </label>
-                        <input type="text" name="client" value="" placeholder="Saisie nom client"/>
-                        <textarea name="formcontrat" id="" cols="30" rows="10"></textarea>
-                        <input type="submit">            
-                    </form>
-                </div>
+                    </div>
+                        <input type="submit" value="Envoyer le formulaire">
+                    
+                
+                </form>
+                <p class="listcontrat boxes">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.</p>
+                <p class="listcontrats boxes">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.</p>
             </div>
         </div>
     </body>

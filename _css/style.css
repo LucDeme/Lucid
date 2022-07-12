@@ -188,14 +188,95 @@ nav {
 /**********************  Main  **********************/
 
 .main {
-    position: absolute;
-    margin-left: 220px;
+
+    margin-left: 210px;
 }
 
-.grid {
-
-    border-radius: 10px;
+.boxes {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
     background-color: #16171A;
 }
 
+.boxestitle {
+    margin-bottom: 20px;
+}
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+} 
+
+.form-reseaux {
+    display: grid;
+    font-size: 14px;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formgrid {
+    margin-top: 10px;
+    align-items: center;
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-gap: 10px;
+}
+
+.titreh {
+    display: grid;
+    grid-column: 1 / span 2;
+    margin-left: 5px;
+    color: #76C7E9;
+
+}
+
+.listcontrat {
+    display: grid;
+    grid-column: 2 / span 3;
+}
+
+.listcontrats {
+    display: grid;
+    grid-column: 3;
+}
+
+input, textarea, select {
+    color: white;
+
+    height: 40px;
+    background-color: #202026;
+    border-radius: 5px;
+    border: 1px solid #202026;
+} 
+
+label {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+
+/*hover bouton submit */
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #16171A;
+    transition: 0.3s;
+    grid-column-start: 2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+    background: #76C7E9;
+    color: #16171A;
+}
+
+
+/**********************  Responsive  **********************/
+
+@media  screen and (max-width: 1000px) {
+    .grid-container {
+        display: block;
+    }
+}
