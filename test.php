@@ -1,199 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Lucid</title>
-  <link rel="icon" href="./img/lucidw.svg" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <!-- Font Awesome Cdn Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>activite</title>
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <ul>
-        <li><a href="#" class="logo">
-          <img src="./img/lucid.svg">
-          <span class="nav-item">Lucid</span>
-        </a></li>
-        <li><a href="#">
-          <i class="fas fa-menorah"></i>
-          <span class="nav-item">Dashboard</span>
-        </a></li>
-        <li><a href="#">
-          <i class="fas fa-comment"></i>
-          <span class="nav-item">Message</span>
-        </a></li>
-        <li><a href="#">
-          <i class="fas fa-database"></i>
-          <span class="nav-item">Report</span>
-        </a></li>
-        <li><a href="#">
-          <i class="fas fa-chart-bar"></i>
-          <span class="nav-item">Attendance</span>
-        </a></li>
-        <li><a href="#">
-          <i class="fas fa-cog"></i>
-          <span class="nav-item">Setting</span>
-        </a></li>
+<script>
+    function affiche_formulaire(){
+        var choix = document.votre_activite.activite.selectedIndex;        
+        document.getElementById('spanAssociation').style.visibility = 'hidden';
+        document.getElementById('spanEntreprise').style.visibility  = 'hidden';
+        document.getElementById('spanAssociation').style.visibility = (choix==1)? 'visible' : 'hidden';
+        document.getElementById('spanEntreprise').style.visibility  = (choix==2)? 'visible' : 'hidden';
+    }
+</script>
 
-        <li><a href="#" class="logout">
-          <i class="fas fa-sign-out-alt"></i>
-          <span class="nav-item">Log out</span>
-        </a></li>
-      </ul>
-    </nav>
+ 
 
-
-    <section class="main">
-      <div class="users">
-        <div class="card">
-          <img src="./img/profil.jfif">
-          <h4>Luc Demessine</h4>
-          <p>Commercial</p>
-          <div class="per">
-            <table>
-              <tr>
-                <td><span>CVS</span></td>
-              </tr>
-            </table>
-          </div>
-          <button>Profile</button>
-        </div>
-        <div class="card">
-          <img src="./pic/img2.jpg">
-          <h4>Balbina kherr</h4>
-          <p>Progammer</p>
-          <div class="per">
-            <table>
-              <tr>
-                <td><span>82%</span></td>
-                <td><span>85%</span></td>
-              </tr>
-              <tr>
-                <td>Month</td>
-                <td>Year</td>
-              </tr>
-            </table>
-          </div>
-          <button>Profile</button>
-        </div>
-        <div class="card">
-          <img src="./pic/img3.jpg">
-          <h4>Badan John</h4>
-          <p>tester</p>
-          <div class="per">
-            <table>
-              <tr>
-                <td><span>94%</span></td>
-                <td><span>92%</span></td>
-              </tr>
-              <tr>
-                <td>Month</td>
-                <td>Year</td>
-              </tr>
-            </table>
-          </div>
-          <button>Profile</button>
-        </div>
-      </div>
-      <div class="ca">
-        <div class="card">
-          <img src="./pic/img4.jpg">
-          <h4>Salina micheal</h4>
-          <p>Ui designer</p>
-          <div class="per">
-            <table>
-              <tr>
-                <td><span>85%</span></td>
-                <td><span>82%</span></td>
-              </tr>
-              <tr>
-                <td>Month</td>
-                <td>Year</td>
-              </tr>
-            </table>
-          </div>
-          <button>Profile</button>
-        </div>
-       </div>
-
-      <section class="attendance">
-        <div class="attendance-list">
-          <h1>Attendance List</h1>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Depart</th>
-                <th>Date</th>
-                <th>Join Time</th>
-                <th>Logout Time</th>
-                <th>Details</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>01</td>
-                <td>Sam David</td>
-                <td>Design</td>
-                <td>03-24-22</td>
-                <td>8:00AM</td>
-                <td>3:00PM</td>
-                <td><button>View</button></td>
-              </tr>
-              <tr class="active">
-                <td>02</td>
-                <td>Balbina Kherr</td>
-                <td>Coding</td>
-                <td>03-24-22</td>
-                <td>9:00AM</td>
-                <td>4:00PM</td>
-                <td><button>View</button></td>
-              </tr>
-              <tr>
-                <td>03</td>
-                <td>Badan John</td>
-                <td>testing</td>
-                <td>03-24-22</td>
-                <td>8:00AM</td>
-                <td>3:00PM</td>
-                <td><button>View</button></td>
-              </tr>
-              <tr>
-                <td>04</td>
-                <td>Sara David</td>
-                <td>Design</td>
-                <td>03-24-22</td>
-                <td>8:00AM</td>
-                <td>3:00PM</td>
-                <td><button>View</button></td>
-              </tr>
-               <tr >
-                <td>05</td>
-                <td>Salina</td>
-                <td>Coding</td>
-                <td>03-24-22</td>
-                <td>9:00AM</td>
-                <td>4:00PM</td>
-                <td><button>View</button></td>
-              </tr>
-              <tr >
-                <td>06</td>
-                <td>Tara Smith</td>
-                <td>Testing</td>
-                <td>03-24-22</td>
-                <td>9:00AM</td>
-                <td>4:00PM</td>
-                <td><button>View</button></td>
-              </tr> 
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </section>
-  </div>
-
+<form name="votre_activite" action="" method="post"> 
+	<label><strong>Votre activité :</strong></label>
+	<select name="activite" OnChange="affiche_formulaire();">
+		<option value="" selected>Choisir une activité</option>
+		<option value="association">Association</option>
+		<option value="entreprise">Entreprise</option>
+	</select>
+</form>
+ 
+<span id="spanAssociation" style="position:absolute; visibility:hidden;">
+	<ul><form id="formAssociation" name="formAssociation" method="POST">
+      <li><label><strong>Nom :</strong></label> <input type="text" name="nom_association"/></li> 
+      <li><label><strong>But, Activité</strong></label> <input type="text" name="activite_association"/></li> 
+	</form></ul>
+</span>
+ 
+<span id="spanEntreprise" style="position:absolute; visibility:hidden;">
+	<ul><form id="formEntreprise" name="formEntreprise" method="POST"> 
+      <li><label><strong>Nom :</strong></label> <input type="text" name="nom_entreprise"/></li>
+      <li><label><strong>Adresse :</strong></label> <input type="text" name="adresse_entreprise" /></li>
+      <li><label><strong>Code Postal :</strong></label> <input type="text" name="code_entreprise"/></li> 
+      <li><label><strong>Ville :</strong></label> <input type="text" name="ville_entreprise"/></li> 
+      <li><label><strong>Secteur d'activité :</strong></label> <input type="text" name="activite_entreprise"/></li>
+	</form></ul>
+</span>
+ 
 </body>
 </html>

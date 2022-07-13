@@ -207,38 +207,45 @@ nav {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 } 
 
 .form-reseaux {
-    display: grid;
+    grid-row: 1 / 5;
+    grid-column: 1fr;
+    height: auto;
     font-size: 14px;
-    grid-template-rows: 50px 1fr;
-    grid-template-columns: 1fr 1fr;
 }
 
-.formgrid {
-    margin-top: 10px;
-    align-items: center;
-    display: grid;
-    grid-column: 1 / span 2;
-    grid-gap: 10px;
-}
+
 
 .titreh {
-    display: grid;
-    grid-column: 1 / span 2;
     margin-left: 5px;
     color: #76C7E9;
 
 }
 
+label {
+    display: block;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+input {
+    display: block;
+    width: 100%;
+}
+
 .listcontrat {
-    display: grid;
+    grid-row: 1 / 5;
     grid-column: 2 / span 3;
 }
 
 .listcontrats {
-    display: grid;
+
     grid-column: 3;
 }
 
@@ -280,3 +287,5 @@ input[type="submit"]:hover {
         display: block;
     }
 }
+
+
