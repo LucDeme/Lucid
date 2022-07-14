@@ -1,94 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
-/* 
-* {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    min-height: 100vh;
-    background-color: rgb(0, 85, 255);
-}
-
-
-
-
-.navbar {
-    padding: 10px 10px;
-    border-radius: 0px 10px 10px 0px;
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    margin-left: -300px;
-    background-color: #e4e4e4;
-    transition: 0.4s;
-}
-
-.nav-link {
-    font-size: 1em;
-}
-
-.nav-link:active,
-.nav-link:focus,
-.nav-link:hover {
-    background-color: #8b3232f6;
-}
-
-.dropdown-menu {
-    background-color: #7952b3;
-}
-
-.dropdown-item:active,
-.dropdown-item:focus,
-.dropdown-item:hover {
-    background-color: #814848be;
-}
-
-.my-container {
-    transition: 0.4s;
-}
-
-.active-nav {
-    margin-left: 0vh;
-}
-
-nav .logo-image{
-    min-width: 45px;
-}
-
-.logo-image img{
-    width: 40px;
-}
-
-nav .brand {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    color:#000000;
-    text-decoration:none; 
-}
-nav .brand .h3{
-    margin-left: 1000px;
-}
-
-
-
-.active-cont {
-    margin-left: 270px;
-}
-
-#menu-btn {
-    background-color: #7952b3;
-    color: #fff;
-}
-
-#menu-btn:focus {
-    box-shadow: 0 0 0 0.25rem #7952b344;
-} */
-
 /**********************  General  **********************/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
 
 *{
     margin: 0;
@@ -99,10 +11,11 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: #202026;
     color: white;
+    overflow-x: hidden;
 }
 
 hr {
-    height: 0.5px;
+    height: 2px;
     margin: 1rem 0;
     padding: 0;
     color: rgb(150, 150, 150);
@@ -117,19 +30,18 @@ h2 {
 
 p {
     font-size: 14px;
-}
+} 
 
 /**********************  Navbar  **********************/
-nav {
-    background: #16171A;
-    position: fixed;
-    color: white;
-    width: 200px;
-    height: 100%;
-    padding-top: 10px;
-    border-radius: 0px 10px 10px 0px;
-    top: 0;
-    left: 0;
+
+#sidebar {
+    grid-area: sidebar;
+    height: 100vh;
+}
+
+#navbar {
+    grid-area: navbar;
+    height: auto;
 }
 
 .brand {
@@ -152,7 +64,6 @@ nav {
     list-style-type: none;
     margin-left: 0px;
     padding-top: 10px;
-    align-content: center;
 }
 
 .menu li a {
@@ -163,12 +74,11 @@ nav {
     margin-left: 20px;
     padding-top: 0px;
     height: 30px;
-
 }
 
 .menu li:hover {
     background-color: #76C7E9;
-  }
+}
 
 .menu li a:hover {
     color: #202026;
@@ -193,8 +103,6 @@ nav {
 }
 
 .boxes {
-    margin-top: 10px;
-    margin-right: 10px;
     padding: 10px;
     border-radius: 5px;
     background-color: #16171A;
@@ -206,65 +114,91 @@ nav {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 15rem 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4rem 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "navbar navbar navbar navbar navbar navbar"
+        "sidebar formcontrat tablecontrat tablecontrat tablecontrat tablecontrat"
+        "sidebar formcontrat tablecontrat tablecontrat tablecontrat tablecontrat"
+        "sidebar formcontrat tablecontrat tablecontrat tablecontrat tablecontrat"
+        "sidebar formcontrat tablecontrat tablecontrat tablecontrat tablecontrat";
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
 } 
 
-
-
-.form-reseaux {
-    grid-row: 1 / 5;
-    grid-column: 1fr;
+#formcontrat {
+    grid-area: formcontrat;
     height: auto;
     font-size: 14px;
-
 }
 
-
-
-.titreh {
-    margin-left: 5px;
-    color: #76C7E9;
-
+.liform {
+    margin-top: 20px;
 }
 
-label {
-    display: block;
-
+input, select {
+    margin-top: 10px;
 }
 
 ul {
     list-style-type: none;
 }
 
+.checkbox {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    margin-right: 6px;
+}
+
+input[type="checkbox"].demo1 {
+    display: none;
+  }
+  input[type="checkbox"].demo1 + label {
+    display: inline-block;
+    background-color: #202026;
+    width: 49%;
+    height: 30px;
+    margin-top: 3%;
+    border-radius: 3px;
+    line-height: 30px;
+
+  }
+  input[type="checkbox"].demo1:checked + label {
+    background-color:#76C7E9; 
+  }
+
+.checboxlabel {
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
 .checkboxes {
-    position: absolute;
-    width: 20px;
+    width: 100%;
 }
 
-.listcontrat {
-    grid-row: 1 / 5;
-    grid-column: 2 / span 3;
+label {
+    margin-top: 20px;
 }
 
-.listcontrats {
-
-    grid-column: 3;
+#tablecontrat {
+    grid-area: tablecontrat;
+    margin-right: 15px;
+    overflow-x: scroll;
 }
 
-input, textarea, select {
+
+input, select {
     color: white;
     width: 100%;
-    height: 40px;
+    height: 30px;
     background-color: #202026;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 1px solid #202026;
 } 
 
-label {
-    margin-left: 5px;
-    margin-top: 10px;
-}
 
 
 /*hover bouton submit */
@@ -296,9 +230,19 @@ td {
 
 /**********************  Responsive  **********************/
 
-@media  screen and (max-width: 1000px) {
-    .grid-container {
-        display: block;
+@media only screen and (max-width: 700px) {
+    #formcontrat {
+        margin-right: 15px;
+    }
+    .grid {
+        overflow-x: none;
+        grid-template-columns: 4rem 1fr;
+        grid-template-rows: 4rem 1fr 1fr 1fr;
+        grid-template-areas: 
+        "navbar navbar"
+        "sidebar formcontrat"
+        "sidebar tablecontrat"
+        "sidebar tablecontrat";
     }
 }
 

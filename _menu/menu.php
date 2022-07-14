@@ -30,10 +30,9 @@
 </nav>
  -->
 
-<nav id="sidebar">
-    <h2 class="brand"><i class="uil uil-adjust-circle" style="color: #76C7E9; margin-right: 5px;"></i>Lucid</h2>
-    <h3 class="servicenav">Administratif</h3>
-    <ul class="menu">
+    <nav class="boxes" id="sidebar">
+        <h3 class="servicenav">Administratif</h3>
+        <ul class="menu">
         <li>
             <a href="contrat.php">
             <i class="uil uil-airplay"></i>     <!-- Pour les icons : https://iconscout.com/unicons/explore/line -->
@@ -52,10 +51,10 @@
             <span>Vue</span>
             </a>
         </li>
-    </ul>
-    <hr>
-    <h3 class="servicenav">Commercial</h3>
-    <ul class="menu">
+        </ul>
+        <hr>
+        <h3 class="servicenav">Commercial</h3>
+        <ul class="menu">
         <li>
             <a href="contrat.php">
             <i class="uil uil-airplay"></i>
@@ -74,10 +73,10 @@
             <span>Coffee</span>
             </a>
         </li>
-    </ul>
-    <hr>
-    <h3 class="servicenav">Community manager</h3>
-    <ul class="menu">
+        </ul>
+        <hr>
+        <h3 class="servicenav">Community manager</h3>
+        <ul class="menu">
         <li>
             <a href="contrat.php">
             <i class="uil uil-airplay"></i>
@@ -96,5 +95,9 @@
             <span>Coffee</span>
             </a>
         </li>
-    </ul>
-</nav>
+        </ul>
+    </nav>
+
+    <nav class="boxes" id="navbar">
+        <h2 class="brand"><i class="uil uil-adjust-circle" style="color: #76C7E9; margin-right: 5px;"></i>Lucid</h2>
+    </nav>
