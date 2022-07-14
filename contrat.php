@@ -38,21 +38,29 @@
                     	<ul><form id="formAssociation" name="formAssociation" method="POST">
                             <li><label>Nom client</label> <input type="text" name="nom_association"/></li>
                             <li><label>Durée de l'abonnement</label> <input type="text" name="activite_association"/></li>
+                            <li><label>Reseaux</label>
+                                <INPUT class="checkboxes" type="checkbox" name="choix1" value="1"> FB
+                                <INPUT class="checkboxes" type="checkbox" name="choix2" value="2"> INSTA
+                                <INPUT class="checkboxes" type="checkbox" name="choix3" value="3"> LINK
+                                <INPUT class="checkboxes" type="checkbox" name="choix4" value="4"> ADS
                             <li><label>Date de début de contrat</label> <input type="text" name="nom_association"/></li> 
                             <li><label>Budget abonnement</label> <input type="text" name="activite_association"/></li> 
                             <li><label>Budget publicité</label> <input type="text" name="nom_association"/></li> 
                             <li><label>Frais d'ouverture</label> <input type="text" name="activite_association"/></li> 
-                            <li><label>Date dernier rendez-vous</label> <input type="text" name="nom_association"/></li> 
-                            <li><label>But, Activité</label> <input type="text" name="activite_association"/></li> 
+                            <li><label>Date dernier rendez-vous</label> <input type="text" name="nom_association"/></li>
+                            <label>type paiement</label> <select name="activite" autocomplete="off" OnChange="affiche_formulaire();">
+                                <option value="" selected hidden>type paiement</option>
+                                <option value="association">Prélevement auto</option>
+                                <option value="entreprise">Virement</option>
+                                <option value="entreprise">Cheque</option>
+                            </select>
                     	</form></ul>
                     </span>
                     <span id="spanEntreprise" style="position:absolute; visibility:hidden;">
                     	<ul><form id="formEntreprise" name="formEntreprise" method="POST"> 
-                          <li><label><strong>Nom :</strong></label> <input type="text" name="nom_entreprise"/></li>
-                          <li><label><strong>Adresse :</strong></label> <input type="text" name="adresse_entreprise" /></li>
-                          <li><label><strong>Code Postal :</strong></label> <input type="text" name="code_entreprise"/></li> 
-                          <li><label><strong>Ville :</strong></label> <input type="text" name="ville_entreprise"/></li> 
-                          <li><label><strong>Secteur d'activité :</strong></label> <input type="text" name="activite_entreprise"/></li>
+                          <li><label><strong>Nom client :</strong></label> <input type="text" name="nom_entreprise"/></li>
+                          <li><label><strong>Date de vente :</strong></label> <input type="text" name="code_entreprise"/></li> 
+                          <li><label><strong>Montant prestation :</strong></label> <input type="text" name="ville_entreprise"/></li> 
                     	</form></ul>
                     </span>
                     </div>  
@@ -82,8 +90,37 @@
                     <input type="submit" value="Envoyer le formulaire">                 
                 </form> -->
 
-                <p class="listcontrat boxes">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.</p>
-                <p class="listcontrats boxes">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident ratione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod provident laudantium. Beatae nemo fuga commodi.</p>
+                <div class="listcontrat boxes">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="1">Client</th>
+                                <th colspan="1">Prestation</th>
+                                <th colspan="1">janv.</th>	
+                                <th colspan="1">févr.</th>
+                                <th colspan="1">mars.</th>
+                                <th colspan="1">avr.</th>
+                                <th colspan="1">juin.</th>
+                                <th colspan="1">juil.</th>
+                                <th colspan="1">août.</th>
+                                <th colspan="1">sept.</th>
+                                <th colspan="1">oct.</th>
+                                <th colspan="1">nov.</th>
+                                <th colspan="1">déc.</th>
+                                <th colspan="1">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nom Client</td>
+                                <td>Type Contrat</td>
+                            </tr>
+                        </tbody>
+                    </table></p>
+                </div>
+                <p class="listcontrats boxes">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, provident rat
+                    ione! Alias debitis, reiciendis facere libero praesentium commodi impedit dolore incidunt ea illo quod p
+                    rovident laudantium. Beatae nemo fuga commodi.</p>
             </div>
         </div>
     </body>
